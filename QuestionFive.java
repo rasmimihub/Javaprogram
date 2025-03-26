@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class SplitAndJoin {
+public class QuestionFive{
     public static void main(String[] args) {
         // Create a Scanner object to take user input
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         // Ask the user to input a sentence
         System.out.print("Enter a sentence: ");
-        String sentence = scanner.nextLine(); // Read the input sentence
+        String sentence = sc.nextLine(); // Read the input sentence
 
         // Split the sentence into words using split()
         String[] words = sentence.split(" "); // Split by spaces
@@ -26,6 +26,6 @@ public class SplitAndJoin {
         System.out.println("Sentence after joining with underscores: " + result.toString());
 
         // Close the scanner to release resources
-        scanner.close();
+        sc.close();
     }
 }
